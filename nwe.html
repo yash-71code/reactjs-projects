@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yaswanth | Developer Portfolio</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+  />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #e5f4fc;
+      color: #222;
+      line-height: 1.6;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 40px;
+      background: #000000aa;
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 20px;
+      list-style: none;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    section {
+      padding: 60px 40px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    section h2 {
+      font-size: 30px;
+      color: #000;
+      margin-bottom: 20px;
+      display: inline-block;
+      border-bottom: 3px solid #0b9ff9;
+    }
+
+    .social-icons a {
+      font-size: 20px;
+      margin: 10px;
+      color: #000;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .social-icons a:hover {
+      color: #fff;
+      background-color: #333;
+      border-radius: 50%;
+      padding: 10px;
+    }
+
+    .image {
+      display: flex;
+      justify-content: center;
+      margin: 20px 0;
+    }
+
+    .image img {
+      width: 160px;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #000;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: 0.3s;
+      margin-top: 15px;
+    }
+
+    .button:hover {
+      background-color: #333;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+
+    .project-card {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-card h4 {
+      margin-bottom: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: #000000aa;
+      color: #fff;
+      margin-top: 60px;
+    }
+
+    #topBtn {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      padding: 10px 14px;
+      background: #000;
+      color: white;
+      border-radius: 50%;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      display: none;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h2>Yaswanth</h2>
+    <nav>
+      <ul>
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Blog">Blog</a></li>
+        <li><a href="#Contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="Home">
+    <h2>Hello!</h2>
+    <h3>I'm Yaswanth — Web Developer</h3>
+    <p>I specialize in creating modern, responsive websites and web apps that provide seamless user experiences.</p>
+    <div class="social-icons">
+      <a href="https://github.com/yash-71code" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
+      <a href="https://linkedin.com/in/beere-yaswanth-6536a425" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
+      <a href="https://twitter.com/_beereyaswanth" title="Twitter" target="_blank"><i class="fab fa-twitter"></i></a>
+      <a href="https://wa.me/9347895352" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+    </div>
+  </section>
+
+  <section id="About">
+    <h2>About Me</h2>
+    <div class="image">
+      <img src="yash.png.jpg" alt="Yaswanth's Photo" />
+    </div>
+    <p>
+      I’m a B.Tech CSE student with a strong passion for full-stack web development. I enjoy coding, UI design, and building practical projects that solve real problems.
+      My hobbies include gaming, design, and always learning new technologies. I'm open to internships, collaborations, and freelance work.
+    </p>
+    <a class="button" href="MUTHIRASHI SAI MAHESH RESUME.pdf" target="_blank">Download Resume</a>
+  </section>
+
+  <section id="Skills">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div>HTML5</div>
+      <div>CSS3</div>
+      <div>JavaScript</div>
+      <div>React.js</div>
+      <div>Node.js</div>
+      <div>MongoDB</div>
+      <div>Git & GitHub</div>
+      <div>Bootstrap</div>
+      <div>UI/UX Design</div>
+    </div>
+  </section>
+
+  <section id="Projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h4>Online Learning Platform</h4>
+      <p>Developed a full-stack MERN app with student login, video courses, and payment integration.</p>
+    </div>
+    <div class="project-card">
+      <h4>Portfolio Website</h4>
+      <p>This website showcases my skills, resume, and project links using HTML, CSS, and JavaScript.</p>
+    </div>
+    <!-- Add more projects as needed -->
+  </section>
+
+  <section id="Blog">
+    <h2>Blog</h2>
+    <p>Coming soon: Articles on web development, tech tips, and learning experiences.</p>
+  </section>
+
+  <section id="Contact">
+    <h2>Contact Me</h2>
+    <p>Email me or connect on social platforms below:</p>
+    <div class="social-icons">
+      <a href="tel:+6300850480" title="Call Me"><i class="fas fa-phone"></i></a>
+      <a href="mailto:beereyaswanth@gmail.com" title="Send Email"><i class="fas fa-envelope"></i></a>
+      <a href="https://instagram.com/i_yashxix" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="https://facebook.com/Beere Yaswanth Naidu" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Yaswanth | Made with ❤️ in India</p>
+  </footer>
+
+  <button onclick="scrollToTop()" id="topBtn" title="Back to Top"><i class="fas fa-chevron-up"></i></button>
+
+  <script>
+    // Show "Back to Top" button on scroll
+    window.onscroll = function () {
+      const btn = document.getElementById("topBtn");
+      if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+        btn.style.display = "block";
+      } else {
+        btn.style.display = "none";
+      }
+    };
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
